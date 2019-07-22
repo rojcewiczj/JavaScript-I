@@ -28,3 +28,18 @@ let anotherFunction = (param) => {
    return num * 3;
 });
  console.log(triple);
+
+
+
+ //callback exercise
+
+ function trickyArrays (partOfArrays, callback) {
+    console.log(`this ${partOfArrays} is tricky`);
+    callback();
+}
+
+function dontGiveUp () {
+    console.log('but dont give up!');
+}
+
+trickyArrays ('iterator', dontGiveUp);
